@@ -1,8 +1,8 @@
 {
-    "name": "rowphp/rowphp",
+    "name": "crudproject/crudproject",
     "type": "project",
-    "description": "Implementing Real-Time Bidding (RTB) Banner Campaign Response",
-    "keywords": ["RTB", "Bidding","Banner Campaign"],
+    "description": "Row php crud project.",
+    "keywords": ["row", "php","mariadb"],
     "license": "MIT",
     "require": {
         "php": "^8.1",

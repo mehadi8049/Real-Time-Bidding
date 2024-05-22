@@ -1,4 +1,5 @@
 <?php
 
-	Router::get('/', 'App\Controllers\HomeController@index');
+use Routes\Route;
 
+Route::run('/','HomeController@index');
