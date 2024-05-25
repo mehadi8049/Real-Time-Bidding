@@ -24,6 +24,16 @@ if (! function_exists('json_response')) {
     }
 }
 
+
+if (! function_exists('input')) {
+    function input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+}
+
 if (! function_exists('redirect')) {
     function redirect($url, $statusCode = 303)
     {

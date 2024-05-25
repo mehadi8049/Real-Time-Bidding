@@ -1,6 +1,6 @@
 
     
-        <a href="/user/create" class="btn btn-info float-right">Add New Users</a>
+        <a href="/user/create" class="btn btn-info float-right">Add New User</a>
         
         <h2>Users</h2>
         <table class="table">

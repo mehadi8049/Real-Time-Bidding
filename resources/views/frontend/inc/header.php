@@ -17,8 +17,14 @@
             <div class="alert alert-success" role="alert">
                 <?= $_SESSION["message"]; ?>
             </div>
-        <?php endif;
-         unset($_SESSION["message"]);
-        ?>
+        <?php endif;?>
+
+        <?php
+         if (isset($_SESSION["errors"]["exception"]) && $_SESSION["errors"]["exception"]): 
+         ?>
+            <div class="alert alert-danger" role="alert">
+                <?= $_SESSION["errors"]["exception"]; ?>
+            </div>
+        <?php endif;?>
     </div>
 
