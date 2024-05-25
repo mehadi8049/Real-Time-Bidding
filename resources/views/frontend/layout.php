@@ -1,8 +1,8 @@
 <?php include_once "inc/header.php"; ?>
 
 <?php
-    if(isset($body)){
-    	require_once $body;
+    if(isset($page)){
+    	require_once $page;
     }
 ?>
 

@@ -51,18 +51,3 @@ if (! function_exists('env')) {
     }
 }
 
-if (! function_exists('toObject')) {
-    function toObject($data,$multiple=false) {
-        if(count($data)==1 && !$multiple){
-           $data=$data[0];
-        }
-        $object = new stdClass();
-        foreach ($data as $key => $value) {
-            if (is_array($value)) {
-                $value = ToObject($value);
-            }
-            $object->$key = $value;
-        }
-        return $object;
-    }
-}
